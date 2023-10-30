@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FireElementComponent } from './fire-element/fire-element.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { FormComponentComponent } from './form-component/form-component.component';
 
 
 
@@ -16,7 +17,8 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 @NgModule({
   declarations: [
     AppComponent,
-    FireElementComponent
+    FireElementComponent,
+    FormComponentComponent
   ],
   imports: [
     provideFirebaseApp(() => initializeApp({  
